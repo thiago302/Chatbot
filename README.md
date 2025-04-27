@@ -38,9 +38,7 @@ pip install -r requirements.txt
 
 O arquivo requirements.txt deve conter:
 
-ini
-Copiar
-Editar
+
 Flask==2.1.2
 ollama==1.0.0
 2. Configuração do Ollama
@@ -50,18 +48,12 @@ Baixe e instale o Ollama: Ollama Website.
 
 Execute o modelo Llama3 com o comando:
 
-bash
-Copiar
-Editar
 ollama run llama3
 Este comando inicia o modelo Llama3 localmente. O servidor do Ollama precisa estar em execução enquanto o chatbot estiver ativo.
 
 3. Executando o Servidor Flask
 Após configurar o Ollama, execute o servidor Flask com o seguinte comando:
 
-bash
-Copiar
-Editar
 python app.py
 O servidor estará disponível em http://127.0.0.1:5000.
 
@@ -72,9 +64,7 @@ Abra o navegador e acesse http://127.0.0.1:5000 para interagir com o chatbot.
 Para finalizar o servidor, pressione Ctrl + C no terminal.
 
 Estrutura do Projeto
-kotlin
-Copiar
-Editar
+
 chatbot/
 │
 ├── app.py             # Código principal do servidor Flask
@@ -89,4 +79,4 @@ chatboot2.py: Contém a lógica de interação com o modelo de linguagem Ollama.
 
 templates/index.html: Página HTML simples com um campo para enviar mensagens para o chatbot.
 
-requirements.txt: Arquivo contendo as dependências do projeto.
+
