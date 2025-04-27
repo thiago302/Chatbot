@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot GPT</title>
+</head>
+<body>
+    <h1>Chatbot com Ollama (Llama3)</h1>
+    
+    <form method="post">
+        <input type="text" name="mensagem" placeholder="Escreva sua mensagem..." required>
+        <button type="submit">Enviar</button>
+    </form>
+
+    {% if resposta %}
+        <h2>Resposta:</h2>
+        <p>{{ resposta }}</p>
+    {% endif %}
+</body>
+</html>
